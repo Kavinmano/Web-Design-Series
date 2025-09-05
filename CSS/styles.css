@@ -1,0 +1,13 @@
+h1 {
+        color: hwb(271 17% 11%)
+    }
+    #para1 {
+        font-size: 19px;
+        color: black;
+        background-color: aqua;
+        border: 2px solid blueviolet ;
+    }
+    .commonpara{
+        background-color: aquamarine;
+        color: aliceblue;
+    }

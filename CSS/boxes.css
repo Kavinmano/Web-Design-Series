@@ -1,0 +1,11 @@
+#outer-box{
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
