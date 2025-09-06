@@ -1,11 +1,36 @@
 #outer-box{
-    width: 500px;
+    width: 800px;
     height: 500px;
     background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .box{
     width: 150px;
     height: 150px;
-    background-color: aqua;
+    
+}
+
+#box1
+{
+    background-color: blue;
+    float: left;
+    
+}
+
+#box2
+{
+    background-color: bisque;
+    float: left;
+}
+
+#box3
+{
+    background-color: blueviolet;
+    float: left;
 }
