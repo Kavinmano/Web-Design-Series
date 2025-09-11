@@ -9,12 +9,13 @@ body, h1,p{
     justify-content: center;
     flex-direction: column;
     align-items:center;
+    padding-bottom: 50px;
 }
 
 #logo{
     font-size: 56px;
     color:#316FF3;
-    padding: 15px 0px; 
+    padding: 20px 0px; 
 
 }
 
@@ -42,7 +43,7 @@ h2{
     flex-wrap: wrap;
 }
 
-input, select{
+input, select {
     padding:8px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -74,4 +75,56 @@ label{
 .quat-width{
     width:31%;
     display: flex;
+}
+
+.radio-btn{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio-label{
+    padding-bottom: 0;
+    font-size: 15px;
+}
+
+.radio-input{
+    margin: 0;
+    width: auto;
+}
+
+small{
+    padding-top: 10px;
+    font-size: 11.75px;
+    color:#777;
+}
+ a {
+    text-decoration: none;
+    color: #316FF3;
+}
+.button-div{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.signup-btn{
+    border: 0;
+    background-color: #00a400;
+    color: white;
+    padding: 8px 55px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.account-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
