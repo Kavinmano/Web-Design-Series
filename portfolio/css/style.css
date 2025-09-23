@@ -1,0 +1,87 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section */
+.banner {
+  background-image: url("/portfolio/images/bg2.jpg");
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* improves text readability */
+}
+
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.banner h4 {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  background: #ff7b00;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background: #ff5500;
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about img {
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills Section */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  max-width: 80px;
+  margin: 20px auto;
+}
+
+/* Contact Section */
+.contact-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background: #111111;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}

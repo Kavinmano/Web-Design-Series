@@ -1,60 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavin Kumar K</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavin Kumar K</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/styles.css">
 
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Hero Section */
+    .banner {
+      height: 100vh;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .banner h4 {
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    .btn-hero {
+      background: #ff7b00;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-hero:hover {
+      background: #ff5500;
+      transform: scale(1.05);
+    }
+
+    /* About Section */
+    .about img {
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Skills Section */
+    .card {
+      border: none;
+      border-radius: 15px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      max-width: 80px;
+      margin: 20px auto;
+    }
+
+    /* Contact Section */
+    .contact-form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-4 text-uppercase border-bottom border-light-subtle">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-primary" href="#">Kavin 😎</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-4">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="banner text-center">
+    <div>
+      <h1 data-aos="fade-up">Hi,This is <span class="text-warning">Kavin Kumar K</span></h1>
+      <h4 data-aos="fade-up" data-aos-delay="200">Frontend Developer | React | Java | MySQL | Spring Boot</h4>
+     <a href="#contact" class="btn btn-hero mt-4" data-aos="zoom-in" data-aos-delay="400">
+  🚀 Connect With Me
+</a>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6" data-aos="fade-right">
+          <h2 class="fw-bold">About Me</h2>
+          <p class="text-muted">I recently completed my B.Tech IT at Sri Krishna College of Technology (Coimbatore). I'm passionate
+            about building modern, responsive web apps and constantly working on projects to improve my creativity and technical skills.</p>
+            <p>I am series buff "specially Game Of Thrones", I like to play cricket,swim and singing etc... </p>
+            <p> During my academics I scored 88.2 % in my 10th grade, 90.6 % in my 12th grade and 7.97 CGPA in my UG </p>
+        </div>
+        <div class="col-md-6 text-center" data-aos="fade-left">
+          <img src="/portfolio/images/Kavin1.jpg" class="img-fluid w-75" alt="Kavin Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">My Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="flip-left">
+          <div class="card p-3">
+            <img src="/portfolio/images/Icons/react.png" alt="React">
+            <h5 class="fw-bold">React</h5>
+            <p class="text-muted">Modern UI development with hooks, state management, and components.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
+          <div class="card p-3">
+            <img src="/portfolio/images/Icons/java.png" alt="Java">
+            <h5 class="fw-bold">Java</h5>
+            <p class="text-muted">Strong foundation in OOP, DSA, and backend development.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="400">
+          <div class="card p-3">
+            <img src="/portfolio/images/Icons/java-script.png" alt="JavaScript">
+            <h5 class="fw-bold">JavaScript</h5>
+            <p class="text-muted">Dynamic and interactive web development using ES6+ features.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="600">
+          <div class="card p-3">
+            <img src="/portfolio/images/Icons/database.png" alt="MySQL">
+            <h5 class="fw-bold">MySQL</h5>
+            <p class="text-muted">Database design, queries, and integration with backend services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-dark text-white">
   <div class="container">
-    <a class="navbar-brand fs-4" href="#">Kavin 😎</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 ">
+    <h2 class="text-center fw-bold mb-4">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 contact-form text-center" data-aos="zoom-in">
 
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
+        <!-- Contact Info -->
+        <div class="mb-4">
+          <p><i class="fas fa-envelope me-2 text-warning"></i>
+            <a href="mailto:kavinsakthi777@gmail.com" class="text-white text-decoration-none">
+              kavinsakthi777@gmail.com
+            </a>
+          </p>
+          <p><i class="fas fa-phone me-2 text-warning"></i>
+            <a href="tel:9585314473" class="text-white text-decoration-none">+91 95853 14473</a>
+          </p>
+          <p><i class="fab fa-github me-2 text-warning"></i>
+            <a href="https://www.github.com/kavinmano" target="_blank" class="text-white text-decoration-none">
+              github.com/kavinmano
+            </a>
+          </p>
+          <p><i class="fab fa-linkedin me-2 text-warning"></i>
+            <a href="https://www.linkedin.com/posts/nantha07_%F0%9D%90%88-%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%9D-%F0%9D%9F%8F%F0%9D%9F%8E%F0%9D%9F%8E-%F0%9D%90%AF%F0%9D%90%A2%F0%9D%90%9D%F0%9D%90%9E%F0%9D%90%A8%F0%9D%90%AC-%F0%9D%90%AD-activity-7363820255208464385-2GqN?utm_source=share&utm_medium=member_android&rcm=ACoAAD09f74B_hvl3ycnC3dCwIdlVSv3b4yg-cc"
+               target="_blank" class="text-white text-decoration-none">
+              LinkedIn Profile
+            </a>
+          </p>
+        </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        
-    
-      
+        <!-- Contact Form -->
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+          <button class="btn btn-warning w-100 fw-bold">Send Message</button>
+        </form>
+      </div>
     </div>
   </div>
-</nav>
+</section>
 
-    <section class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="colo-md-12">
-                    <div Class ="w-75 m-auto">
-                        <h1>Hi I'm Kavin Kumar K</h1>
-                    <h4>I am a budding Front end developer, I have skills on React, Java, MySql, Aws and Spring Tool Suit</h4>
-                    <button type="button" class="btn btn-dark">Connect With Me!</button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <footer>
+    <p>© 2025 Kavin Kumar. All rights reserved.</p>
+  </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
